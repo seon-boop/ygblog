@@ -188,7 +188,35 @@ h2::before {
   background: linear-gradient(135deg, #fff8e8, #fffdf8);
   border: 1px solid #ead6a9;
 }
+.goldbar-note {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin: 36px 0;
+  padding: 28px 30px;
+  background: linear-gradient(135deg, #fff8e8, #fffdf8);
+  border: 1px solid #ead6a9;
+  overflow: hidden;
+}
 
+.goldbar-image {
+  flex: 0 0 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goldbar-image img {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,.18));
+}
+
+.goldbar-note p {
+  margin: 0;
+}
 
 .visual-note p {
   margin: 0;
@@ -302,7 +330,5 @@ h2::before {
     grid-template-columns: 1fr;
   }
 
-  .circle img {
-    width: 150px;
-  }
+
 }
