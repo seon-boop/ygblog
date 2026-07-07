@@ -133,7 +133,6 @@ strong {
   font-weight: 800;
 }
 
-.callout,
 .visual-note {
   display: grid;
   grid-template-columns: 140px 1fr;
@@ -149,15 +148,20 @@ strong {
   display: block;
 }
 .callout {
-  padding: 24px 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  margin: 36px 0;
+  padding: 28px 30px;
   background: #fff7e4;
   border: 1px solid #edd9aa;
 }
 
 .callout p {
-  margin: 8px 0;
+  margin: 0;
   font-size: 17px;
-  line-height: 1.75;
+  line-height: 1.8;
 }
 
 .content-section {
