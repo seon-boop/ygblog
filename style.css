@@ -134,16 +134,19 @@ strong {
 }
 
 .callout,
-.summary-box,
-.quote-box,
 .visual-note {
   display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 30px;
+  grid-template-columns: 140px 1fr;
+  gap: 24px;
   align-items: center;
   padding: 28px;
   background: linear-gradient(135deg, #fff8e8, #fffdf8);
   border: 1px solid #ead6a9;
+}
+
+.quote-box,
+.summary-box {
+  display: block;
 }
 .callout {
   padding: 24px 26px;
@@ -281,6 +284,17 @@ h2::before {
   p { font-size: 16px; line-height: 1.9; }
   .meta span { width: 100%; }
   .meta span::after { display: none; }
-  .visual-note { grid-template-columns: 1fr; }
-  .circle { width: 120px; height: 120px; }
+
+  .coin-section {
+    grid-template-columns: 1fr;
+  }
+
+  .callout,
+  .visual-note {
+    grid-template-columns: 1fr;
+  }
+
+  .circle img {
+    width: 150px;
+  }
 }
