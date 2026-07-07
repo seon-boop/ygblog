@@ -25,6 +25,10 @@ body {
   width: 100%;
   padding: 54px 20px 80px;
 }
+.coin-card {
+    text-align: center;
+}
+
 .coin-card img {
     width: 100%;
     max-width: 180px;
