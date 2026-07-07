@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap');
+.gold-bar {
+  position: relative;
+  overflow: hidden;
+}
 
+.gold-bar::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  right: 8px;
+  height: 10px;
+  border-radius: 8px;
+  background: rgba(255,255,255,.45);
+}
+
+.gold-bar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 35%,
+    rgba(255,255,255,.45) 50%,
+    transparent 65%
+  );
+  transform: translateX(-120%);
+  transition: .8s;
+}
+
+.gold-bar:hover::after {
+  transform: translateX(120%);
+}
 :root {
   --bg: #f7f4ee;
   --paper: #fffdf8;
